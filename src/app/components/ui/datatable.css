@@ -1,0 +1,32 @@
+.collapsible-content {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e2e8f0;
+    background-color: #f8fafc;
+    padding: 10px;
+  }
+  
+  .collapsible-header, .collapsible-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+  }
+  
+  .collapsible-cell {
+    flex: 1;
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  .collapsible-header {
+    font-weight: bold;
+    background-color: #edf2f7;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .collapsible-row:nth-child(even) {
+    background-color: #f1f5f9;
+  }
+  
