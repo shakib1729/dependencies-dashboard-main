@@ -1,6 +1,5 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
-import { useMemo } from "react";
 
 export type Dependency = {
   dep: string;
