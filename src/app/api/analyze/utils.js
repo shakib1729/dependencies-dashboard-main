@@ -134,7 +134,7 @@ export const getOutdatedDep = (dependency, metadata, publishDate_Curr, publishDa
 // install size of the package via packagephobia api.
 export const getPackageInstallSize = async (name, version) => {
     try {
-        const response_packagePhobia = await axios.get(`https://packagephobia.com/api.json?p=${name}@${version}`, {'headers':{'User-Agent': 'bestofjs.org'}});
+        const response_packagePhobia = await axios.get(`https://packagephobia.com/api.json?p=${name}@${version}`, {'headers':{'User-Agent': 'shakib1729/dependencies-dashboard-main'}});
         return {installSize: response_packagePhobia.data.installSize, publishSize: response_packagePhobia.data.publishSize};
     } catch (error) {
         console.error(`Failed to get size for ${name}@${version} from packagephobia:`, error.message);
